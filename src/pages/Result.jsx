@@ -24,16 +24,16 @@ const Result = () => {
 
       <div className="result-buttons">
         <button className="btn" onClick={() => navigate("/realms")}>
-          ᨒ Explore Another Realm
+          Explore Another Realm
         </button>
         <button className="btn" onClick={() => navigate(`/${emotion}/badges`)}>
-          ⍟ View All Badges
+          View Badges
         </button>
         <button className="btn" onClick={() => navigate("/reflect")}>
-          ☘︎ Reflect
+          Reflect
         </button>
-        <button className="btn" onClick={() => navigate(`/${emotion}/tools`)}>
-          ✎ Learn More
+        <button className="btn" onClick={() => navigate(`/${emotion}/more`)}>
+          Learn More
         </button>
       </div>
     </div>

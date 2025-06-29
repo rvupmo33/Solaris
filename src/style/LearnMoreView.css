@@ -1,0 +1,95 @@
+.page {
+  width: 900px;
+  min-height: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: black;
+  color: white;
+
+  border: 1px solid #cea782;
+  border-radius: 10px;
+  position: relative;
+  max-height: 491px;
+  overflow-y: auto;
+}
+
+.page::-webkit-scrollbar {
+  width: 8px;
+}
+.page::-webkit-scrollbar-thumb {
+  background: #cea78244;
+  border-radius: 4px;
+}
+
+.title-1 {
+  font-size: 32px;
+  color: #dfb891;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Alice", serif;
+}
+
+.tooltip {
+  position: relative;
+  cursor: help;
+  color: #dfb891;
+  border-bottom: 1px dashed #dfb891;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 240px;
+  background-color: #1a1a1a;
+  color: #f0e6dc;
+  text-align: left;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 0 10px #dfb89133;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subtitle {
+  margin-bottom: 5px;
+  font-size: 27px;
+}
+
+hr {
+  opacity: 50%;
+  margin: 45px 0;
+}
+
+.text-field {
+  margin: 15px 0;
+  line-height: 130%;
+  background-color: #cea782;
+  color: #000;
+  text-align: center;
+  border: 1px solid #dfb891;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.section-text {
+  line-height: 130%;
+  margin-bottom: 15px;
+}
+
+.list {
+  line-height: 150%;
+  margin-left: 40px;
+  margin-bottom: 15px;
+}

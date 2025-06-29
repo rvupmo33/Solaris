@@ -8,6 +8,7 @@ import Tools from "./pages/Tools";
 import Result from "./pages/Result";
 import Badges from "./pages/Badges";
 import Reflect from "./pages/Reflect";
+import LearnMoreView from "./pages/LearnMoreView";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/:emotion/result" element={<Result />} />
           <Route path="/:emotion/badges" element={<Badges />} />
           <Route path="/reflect" element={<Reflect />} />
+          <Route path="/:emotion/more" element={<LearnMoreView />} />
         </Routes>
       </Router>
     </div>
