@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import Tools from "./pages/Tools";
 import Result from "./pages/Result";
 import Badges from "./pages/Badges";
+import Reflect from "./pages/Reflect";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/:emotion/tools" element={<Tools />} />
           <Route path="/:emotion/result" element={<Result />} />
           <Route path="/:emotion/badges" element={<Badges />} />
+          <Route path="/reflect" element={<Reflect />} />
         </Routes>
       </Router>
     </div>

@@ -24,16 +24,16 @@ const Result = () => {
 
       <div className="result-buttons">
         <button className="btn" onClick={() => navigate("/realms")}>
-          ᨒ Explore Another Realm &nbsp;&nbsp;ོ
-        </button>
-        <button className="btn" onClick={() => navigate(`/${emotion}/tools`)}>
-          ◁ | Replay a Tool | ▷
-        </button>
-        <button className="btn" onClick={() => navigate("/")}>
-          .☘︎ Leave Soralis ☘︎.
+          ᨒ Explore Another Realm
         </button>
         <button className="btn" onClick={() => navigate(`/${emotion}/badges`)}>
-          𓆩 View All Badges 𓆪
+          ⍟ View All Badges
+        </button>
+        <button className="btn" onClick={() => navigate("/reflect")}>
+          ☘︎ Reflect
+        </button>
+        <button className="btn" onClick={() => navigate(`/${emotion}/tools`)}>
+          ✎ Learn More
         </button>
       </div>
     </div>

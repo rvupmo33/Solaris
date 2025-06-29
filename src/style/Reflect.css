@@ -1,0 +1,81 @@
+.page {
+  width: 900px;
+  min-height: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: black;
+  color: white;
+
+  border: 1px solid #cea782;
+  border-radius: 10px;
+  position: relative;
+  max-height: 491px;
+  overflow-y: auto;
+}
+
+.page::-webkit-scrollbar {
+  width: 8px;
+}
+.page::-webkit-scrollbar-thumb {
+  background: #cea78244;
+  border-radius: 4px;
+}
+
+.reflect-title {
+  font-size: 32px;
+  color: #dfb891;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Alice", serif;
+}
+
+.reflect-cont {
+  border: 1px solid #cea782;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.reflect-cont p {
+  margin-top: 10px;
+  line-height: 140%;
+}
+
+.reflect-cont h4 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #cea782;
+  font-size: 20px;
+}
+
+.reflect-cont textarea {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  font-family: "Alice", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f8f4ee;
+  background-color: #1a1a1a;
+  border: 1px solid #dfb89177;
+  border-radius: 6px;
+  resize: none;
+  outline: none;
+}
+
+.reflect-cont textarea:focus {
+  border-color: #dfb891;
+  box-shadow: 0 0 10px #dfb89166;
+}
+
+.reflect-cont button {
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
