@@ -1,0 +1,104 @@
+.page {
+  width: 900px;
+  min-height: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  background-color: black;
+  color: white;
+
+  border: 1px solid #cea782;
+  border-radius: 10px;
+  position: relative;
+}
+
+.tool-title {
+  font-size: 32px;
+  color: #dfb891;
+
+  text-align: center;
+  font-family: "Alice", serif;
+}
+
+.orb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.orb {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #fee0c4, #cea782);
+  border: 2px solid #b08b68;
+  border-radius: 50%;
+  transition: transform 4s ease-in-out;
+}
+
+.breathe-in {
+  transform: scale(1.5);
+  transition-duration: 4s;
+}
+
+.exhale {
+  transform: scale(1);
+  transition-duration: 4s;
+}
+
+.hold {
+  transform: scale(1.25);
+  transition-duration: 2s;
+}
+
+.breathing-instruction {
+  margin-top: 60px;
+  font-size: 3rem;
+  font-style: italic;
+  color: #ffffff;
+  animation: fade 2s ease-in-out infinite alternate;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.back-btn {
+  width: 150px;
+  padding: 10px 10px;
+  position: absolute;
+  bottom: 20px;
+  margin: 0;
+}
+
+.result-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 90px;
+  font-size: 20px;
+  margin-top: 20px;
+  background: #151414;
+  border: 1px solid #393939;
+  color: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 0 #ffffff, 0 1px 0 0 #f2f2f2, 0 2px 0 0 #e1e1e1,
+    0 4px 0 0 #cccccc, 0 5px 0 0 #a2a2a2, 0 6px 0 0 #787878, 0 7px 0 0 #515151,
+    0 7px 8px 0 #393939;
+  transition: all 250ms;
+}
+
+.result-btn:hover {
+  transform: translateY(4px);
+  box-shadow: inset 0 1px 0 0 #ffffff, 0 1px 0 0 #f2f2f2, 0 1px 0 0 #e1e1e1,
+    0 2px 0 0 #cccccc, 0 2px 0 0 #a2a2a2, 0 3px 0 0 #787878, 0 4px 0 0 #515151,
+    0 4px 6px 0 #393939;
+}

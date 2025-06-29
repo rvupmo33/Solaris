@@ -1,0 +1,43 @@
+.page {
+  width: 900px;
+  min-height: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  background-color: black;
+  color: white;
+
+  border: 1px solid #cea782;
+  border-radius: 10px;
+  position: relative;
+}
+
+.badge-card {
+  transform: translateY(4px);
+  border: 1px solid #c49c43;
+  transform: translateY(4px);
+
+  transform: translateY(4px);
+  box-shadow: inset 0 1px 0 0 #ffffff, 0 1px 0 0 #fff9e6, 0 1px 0 0 #fff0cc,
+    0 2px 0 0 #ffe6b3, 0 2px 0 0 #ffdc99, 0 3px 0 0 #ffd480, 0 4px 0 0 #e6b85c,
+    0 4px 6px 0 #c49c43;
+}
+
+.badge-card:hover {
+  transform: translateY(4px);
+  border: 1px solid #c49c43;
+  transform: translateY(4px);
+  box-shadow: inset 0 1px 0 0 #ffffff, 0 1px 0 0 #fff9e6, 0 1px 0 0 #fff0cc,
+    0 2px 0 0 #ffe6b3, 0 2px 0 0 #ffdc99, 0 3px 0 0 #ffd480, 0 4px 0 0 #e6b85c,
+    0 4px 6px 0 #c49c43;
+}
+
+.back-btn-2 {
+  width: 150px;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}

@@ -1,0 +1,87 @@
+.page {
+  width: 900px;
+  min-height: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  background-color: black;
+  color: white;
+
+  border: 1px solid #cea782;
+  border-radius: 10px;
+  position: relative;
+}
+
+.realm-select {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.realm-title {
+  font-size: 32px;
+  color: #dfb891;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.emotion-card {
+  width: 200px;
+  height: 175px;
+  padding: 16px;
+  border-radius: 20px;
+  background: #ffffff0d;
+  border: 1px solid #dfb891;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 1px 0 0 #fbe9db, 0 1px 0 0 #f7decb, 0 2px 0 0 #f1d3bc,
+    0 4px 0 0 #ebc9ae, 0 5px 0 0 #e6bfa2, 0 6px 0 0 #dfb891, 0 7px 0 0 #d9ab81,
+    0 7px 8px 0 #d6a77c;
+  transition: all 250ms;
+}
+
+.emotion-card:hover {
+  transform: translateY(4px);
+  box-shadow: inset 0 1px 0 0 #fbe9db, 0 1px 0 0 #f7decb, 0 1px 0 0 #f1d3bc,
+    0 2px 0 0 #ebc9ae, 0 2px 0 0 #e6bfa2, 0 3px 0 0 #dfb891, 0 4px 0 0 #d9ab81,
+    0 4px 6px 0 #d6a77c;
+}
+
+.realm-icon {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  /* background-color: orange; */
+  margin-top: 5px;
+  z-index: 100;
+  border: none;
+  filter: drop-shadow(0 0 4px #dfb89180);
+}
+
+.realm-name {
+  font-size: 18px;
+  color: #dfb891;
+  font-weight: bold;
+  /* background-color: pink; */
+}
+
+.emotion-label {
+  /* background-color: blue; */
+  font-size: 14px;
+  color: #bda382;
+  margin-top: 4px;
+}

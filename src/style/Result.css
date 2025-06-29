@@ -1,0 +1,71 @@
+.page {
+  width: 900px;
+  min-height: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: black;
+  color: white;
+
+  border: 1px solid #cea782;
+  border-radius: 10px;
+  position: relative;
+}
+
+.result-title {
+  font-size: 32px;
+  color: #dfb891;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Alice", serif;
+}
+
+.result-message {
+  text-align: center;
+  color: #cea782;
+}
+
+.result-buttons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.button-inner {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  background: #151414;
+  border: 1px solid #393939;
+  color: #cea782;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(4px);
+}
+
+.badge-cont1 {
+  height: 270px;
+  border-radius: 10px;
+  z-index: 100;
+  object-fit: contain;
+  filter: drop-shadow(0 0 14px rgba(255, 60, 60, 0.55));
+  animation: float 3s ease-in-out infinite;
+  width: auto;
+  border: none;
+  position: relative;
+  margin-top: 30px;
+}
