@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+* {
+  font-family: "Alice", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* :root {
+
+} */
+
+body {
+  background-image: url("./assets/Stars.jpeg");
+  background-repeat: repeat;
+  background-size: 30%;
+  background-color: black;
+  background-position: top left;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nav-links {
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #cea782;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+}
