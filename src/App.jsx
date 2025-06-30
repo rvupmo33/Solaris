@@ -9,6 +9,7 @@ import Result from "./pages/Result";
 import Badges from "./pages/Badges";
 import Reflect from "./pages/Reflect";
 import LearnMoreView from "./pages/LearnMoreView";
+import AppLayout from "./components/AppLayout";
 
 function App() {
   return (
@@ -17,13 +18,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/realms" element={<RealmSelect />} />
-          <Route path="/realm/:emotion" element={<RealmView />} />
-          <Route path="*" element={<NotFound />} />
-          <Route path="/:emotion/tools" element={<Tools />} />
-          <Route path="/:emotion/result" element={<Result />} />
-          <Route path="/:emotion/badges" element={<Badges />} />
-          <Route path="/reflect" element={<Reflect />} />
-          <Route path="/:emotion/more" element={<LearnMoreView />} />
+          <Route element={<AppLayout />}>
+            <Route path="/realm/:emotion" element={<RealmView />} />
+            <Route path="/:emotion/tools" element={<Tools />} />
+            <Route path="/:emotion/result" element={<Result />} />
+            <Route path="/:emotion/badges" element={<Badges />} />
+            <Route path="/reflect" element={<Reflect />} />
+            <Route path="/:emotion/more" element={<LearnMoreView />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
         </Routes>
       </Router>
     </div>

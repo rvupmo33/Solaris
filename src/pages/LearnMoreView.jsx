@@ -8,9 +8,9 @@ const LearnMoreView = () => {
 
   const LearnMoreInfo = {
     Anxiety: {
-      title1: "📜 Tome of Tides: Unraveling Anxiety in Soralis",
+      title1: "📜 Tome of Tides: Unraveling Anxiety in Solaris",
       intro:
-        "In the realms of Soralis, knowledge is as powerful as courage. Here, you’ll find explanations, wisdom, and magic woven into the meanings behind your emotions.",
+        "In the realms of Solaris, knowledge is as powerful as courage. Here, you’ll find explanations, wisdom, and magic woven into the meanings behind your emotions.",
       info: [
         {
           subtitle: "𖡎 How Anxiety Feels",

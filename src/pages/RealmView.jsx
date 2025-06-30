@@ -83,59 +83,61 @@ const RealmView = () => {
   if (!realm) return <div className="page">Realm not found.</div>;
 
   return (
-    <div className="page">
-      <h1 className="realm-title">Welcome to the {realm.name}</h1>
-      <div className="floating-card">
-        {counter < 7 ? (
-          <p>
-            Tap the symbols across the map to reveal insights and tools.
-            Discover all
-            <strong> 7 hidden pins</strong> to unlock the portal.
-          </p>
-        ) : (
-          <p>
-            You've uncovered every insight. The <strong>🔮 portal</strong> is
-            now open — click it to continue your journey.
-          </p>
-        )}
-      </div>
+    <>
+      <div className="page">
+        <h1 className="realm-title">Welcome to the {realm.name}</h1>
+        <div className="floating-card">
+          {counter < 7 ? (
+            <p>
+              Tap the symbols across the map to reveal insights and tools.
+              Discover all
+              <strong> 7 hidden pins</strong> to unlock the portal.
+            </p>
+          ) : (
+            <p>
+              You've uncovered every insight. The <strong>🔮 portal</strong> is
+              now open — click it to continue your journey.
+            </p>
+          )}
+        </div>
 
-      <div className="floating-score">
-        <p>
-          Score: <span>{counter}</span>
-        </p>
-      </div>
+        <div className="floating-score">
+          <p>
+            Score: <span>{counter}</span>
+          </p>
+        </div>
 
-      <div className="map-container">
-        <img src={realm.bg} alt="" className="realm-map" />
-        {realm.pins.map((pin, index) =>
-          clickedPins.includes(index) ? null : (
+        <div className="map-container">
+          <img src={realm.bg} alt="" className="realm-map" />
+          {realm.pins.map((pin, index) =>
+            clickedPins.includes(index) ? null : (
+              <div
+                key={index}
+                className="pin-wrapper"
+                onClick={() => ScoreManager(index)}
+                style={{ top: pin.top, left: pin.left }}
+              >
+                <div className="pin">{pin.label}</div>
+                <div className="pin-label">{pin.text}</div>
+              </div>
+            )
+          )}
+
+          {counter === 7 && (
             <div
-              key={index}
-              className="pin-wrapper"
-              onClick={() => ScoreManager(index)}
-              style={{ top: pin.top, left: pin.left }}
+              className="pin-wrapper main-pin"
+              onClick={() => navigate(`/${emotion}/tools`)}
             >
-              <div className="pin">{pin.label}</div>
-              <div className="pin-label">{pin.text}</div>
+              <div className="pin">🔮</div>
+              <div className="pin-label">
+                🔮 Enter the portal to a breathing tool that calms your inner
+                storm.
+              </div>
             </div>
-          )
-        )}
-
-        {counter === 7 && (
-          <div
-            className="pin-wrapper main-pin"
-            onClick={() => navigate(`/${emotion}/tools`)}
-          >
-            <div className="pin">🔮</div>
-            <div className="pin-label">
-              🔮 Enter the portal to a breathing tool that calms your inner
-              storm.
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
